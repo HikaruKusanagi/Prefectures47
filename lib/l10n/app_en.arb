@@ -1,5 +1,6 @@
 {
   "@@locale":"en",
   "helloWorld": "Hello World!",
-  "hokkaido": "Hokkaido"
+  "hokkaido": "Hokkaido",
+  "aomori": "Aomori"
 }

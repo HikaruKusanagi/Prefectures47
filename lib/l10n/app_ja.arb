@@ -1,5 +1,6 @@
 {
   "@@locale": "ja",
   "helloWorld": "ハローワールド!",
-  "hokkaido": "北海道"
+  "hokkaido": "北海道",
+  "aomori": "青森"
 }
