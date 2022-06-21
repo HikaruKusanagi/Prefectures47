@@ -14,7 +14,7 @@ class _MyHomePageState extends State<MyHomePage> {
      appBar: AppBar(title: Text('じゃんけん'),),
       body: Center(
         child: Row(
-          mainAxisAlignment: MainAxisAlignment,
+          mainAxisAlignment: MainAxisAlignment.spaceEvenly,
           children: [
             ElevatedButton(
               onPressed: () {},
