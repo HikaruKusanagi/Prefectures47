@@ -17,15 +17,21 @@ class _MyHomePageState extends State<MyHomePage> {
           mainAxisAlignment: MainAxisAlignment.spaceEvenly,
           children: [
             ElevatedButton(
-              onPressed: () {},
+              onPressed: () {
+                print('✊');
+              },
               child: Text('✊'),
             ),
             ElevatedButton(
-              onPressed: () {},
+              onPressed: () {
+                print('✌️');
+              },
               child: Text('✌️'),
             ),
             ElevatedButton(
-              onPressed: () {},
+              onPressed: () {
+                print('✋');
+              },
               child: Text('✋'),
             ),
           ],
