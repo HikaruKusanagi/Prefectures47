@@ -13,26 +13,31 @@ class _MyHomePageState extends State<MyHomePage> {
     return Scaffold(
      appBar: AppBar(title: Text('じゃんけん'),),
       body: Center(
-        child: Row(
-          mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+        child: Column(
           children: [
-            ElevatedButton(
-              onPressed: () {
-                print('✊');
-              },
-              child: Text('✊'),
-            ),
-            ElevatedButton(
-              onPressed: () {
-                print('✌️');
-              },
-              child: Text('✌️'),
-            ),
-            ElevatedButton(
-              onPressed: () {
-                print('✋');
-              },
-              child: Text('✋'),
+            Text('✊'),
+            Row(
+              mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+              children: [
+                ElevatedButton(
+                  onPressed: () {
+                    print('✊');
+                  },
+                  child: Text('✊'),
+                ),
+                ElevatedButton(
+                  onPressed: () {
+                    print('✌️');
+                  },
+                  child: Text('✌️'),
+                ),
+                ElevatedButton(
+                  onPressed: () {
+                    print('✋');
+                  },
+                  child: Text('✋'),
+                ),
+              ],
             ),
           ],
         ),
