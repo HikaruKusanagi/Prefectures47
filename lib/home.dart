@@ -11,8 +11,26 @@ class _MyHomePageState extends State<MyHomePage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-     appBar: AppBar(title: Text('じゃんけん'),
-     ),
+     appBar: AppBar(title: Text('じゃんけん'),),
+      body: Center(
+        child: Row(
+          mainAxisAlignment: MainAxisAlignment,
+          children: [
+            ElevatedButton(
+              onPressed: () {},
+              child: Text('✊'),
+            ),
+            ElevatedButton(
+              onPressed: () {},
+              child: Text('✌️'),
+            ),
+            ElevatedButton(
+              onPressed: () {},
+              child: Text('✋'),
+            ),
+          ],
+        ),
+      ),
     );
   }
 }
