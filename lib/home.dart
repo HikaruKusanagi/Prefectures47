@@ -11,6 +11,12 @@ class _MyHomePageState extends State<MyHomePage> {
 
   String myHand = '✊';
 
+  void selectHand(String selectedHand) {
+    myHand = selectedHand;
+    print(selectedHand);
+    setState((){});
+  }
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -27,21 +33,20 @@ class _MyHomePageState extends State<MyHomePage> {
               children: [
                 ElevatedButton(
                   onPressed: () {
-                    myHand = '✊';
-                    print('✊');
+                    selectHand('✊');
                   },
                   child: Text('✊'),
                 ),
                 ElevatedButton(
                   onPressed: () {
-                    myHand = '✌️';
-                    print('✌️');
+                    selectHand('✌️');
                   },
                   child: Text('✌️'),
                 ),
                 ElevatedButton(
                   onPressed: () {
                     myHand = '✋';
+                    setState((){});
                     print('✋');
                   },
                   child: Text('✋'),
