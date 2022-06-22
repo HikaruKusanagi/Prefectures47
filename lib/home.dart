@@ -8,14 +8,18 @@ class  MyHomePage extends StatefulWidget {
 }
 
 class _MyHomePageState extends State<MyHomePage> {
+
+  String myHand = '✊';
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
      appBar: AppBar(title: Text('じゃんけん'),),
       body: Center(
         child: Column(
+          mainAxisAlignment: MainAxisAlignment.center,
           children: [
-            Text('✊'),
+            Text('✊',style: TextStyle(fontSize: 32)),
             Row(
               mainAxisAlignment: MainAxisAlignment.spaceEvenly,
               children: [
