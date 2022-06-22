@@ -25,7 +25,15 @@ class _MyHomePageState extends State<MyHomePage> {
   }
 
   String randomNumberToHand(int randomNumber) {
-   
+   switch (randomNumber) {
+     case 0:
+       return '✊';
+     case 1:
+       return '✌️';
+     case 2:
+       return '✋';
+     default: '✊';
+   }
   }
 
   @override
