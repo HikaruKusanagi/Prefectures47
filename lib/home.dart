@@ -15,13 +15,13 @@ class _MyHomePageState extends State<MyHomePage> {
 
   void selectHand(String selectedHand) {
     myHand = selectedHand;
-    print(selectedHand);
     generateComputerHand();
     setState((){});
   }
 
   void generateComputerHand() {
-   print(Random().nextInt(3));
+    final randomNumber = Random().nextInt(3);
+    print(randomNumberToHand(randomNumber));
   }
 
   String randomNumberToHand(int randomNumber) {
@@ -32,7 +32,8 @@ class _MyHomePageState extends State<MyHomePage> {
        return '✌️';
      case 2:
        return '✋';
-     default: '✊';
+     default:
+       return '✊';
    }
   }
 
