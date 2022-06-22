@@ -11,6 +11,7 @@ class  MyHomePage extends StatefulWidget {
 
 class _MyHomePageState extends State<MyHomePage> {
 
+  String computerHand = '✊';
   String myHand = '✊';
 
   void selectHand(String selectedHand) {
@@ -46,7 +47,7 @@ class _MyHomePageState extends State<MyHomePage> {
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
             Text(myHand,style: TextStyle(fontSize: 32),),
-            SizedBox(height: 32),
+            SizedBox(height: 40),
             Text(myHand,style: TextStyle(fontSize: 32),),
             SizedBox(height: 32),
             Row(
