@@ -45,9 +45,7 @@ class _MyHomePageState extends State<MyHomePage> {
                 ),
                 ElevatedButton(
                   onPressed: () {
-                    myHand = '✋';
-                    setState((){});
-                    print('✋');
+                    selectHand('✋');
                   },
                   child: Text('✋'),
                 ),
