@@ -24,8 +24,8 @@ class _MyHomePageState extends State<MyHomePage> {
    print(Random().nextInt(3));
   }
 
-  void randomNumberToHand(int randomNumber) {
-    print(Random().nextInt(3));
+  String randomNumberToHand(int randomNumber) {
+   
   }
 
   @override
