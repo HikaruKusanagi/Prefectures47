@@ -19,24 +19,29 @@ class _MyHomePageState extends State<MyHomePage> {
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
-            Text('✊',style: TextStyle(fontSize: 32)),
+            Text(myHand,style: TextStyle(fontSize: 32),
+            ),
+            SizedBox(height: 32),
             Row(
               mainAxisAlignment: MainAxisAlignment.spaceEvenly,
               children: [
                 ElevatedButton(
                   onPressed: () {
+                    myHand = '✊';
                     print('✊');
                   },
                   child: Text('✊'),
                 ),
                 ElevatedButton(
                   onPressed: () {
+                    myHand = '✌️';
                     print('✌️');
                   },
                   child: Text('✌️'),
                 ),
                 ElevatedButton(
                   onPressed: () {
+                    myHand = '✋';
                     print('✋');
                   },
                   child: Text('✋'),
