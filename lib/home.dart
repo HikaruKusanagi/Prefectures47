@@ -41,13 +41,22 @@ class _MyHomePageState extends State<MyHomePage> {
   }
 
   void judge() {
+    // if (computerHand == myHand) {
+    //   result = '引き分け';
+    // } else if (myHand == '✊' && computerHand == '✌️') {
+    //   result = '勝ち';
+    // } else if (myHand == '✌️' && computerHand == '✋️') {
+    //   result = '勝ち';
+    // } else if (myHand == '✋️' && computerHand == '✊') {
+    //   result = '勝ち';
+    // }
     if (computerHand == myHand) {
       result = '引き分け';
-    } else if (myHand == '✊' && computerHand == '✌️') {
-      result = '勝ち';
-    } else if (myHand == '✌️' && computerHand == '✋️') {
-      result = '勝ち';
-    } else if (myHand == '✋️' && computerHand == '✊') {
+    } else if (
+        myHand == '✊' && computerHand == '✌️' ||
+        myHand == '✌️' && computerHand == '✋️' ||
+        myHand == '✋️' && computerHand == '✊'
+    ) {
       result = '勝ち';
     }
   }
