@@ -126,6 +126,22 @@ class _Prefectures47State extends State<Prefectures47> {
                 SizedBox(width: 60),
               ],
             ),
+            Row(
+              mainAxisAlignment: MainAxisAlignment.end,
+              children: [
+                Container(
+                  height: 50,
+                  width: 70,
+                  color: Colors.green,
+                ),
+                Container(
+                  height: 50,
+                  width: 50,
+                  color: Colors.blue,
+                ),
+                SizedBox(width: 60),
+              ],
+            ),
             Text(result,style: TextStyle(fontSize: 32),),
             SizedBox(height: 32),
             Text(computerHand,style: TextStyle(fontSize: 32),),
