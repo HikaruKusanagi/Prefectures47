@@ -22,7 +22,7 @@ class _MyHomePageState extends State<MyHomePage> {
 
   void generateComputerHand() {
     final randomNumber = Random().nextInt(3);
-    print(randomNumberToHand(randomNumber));
+    computerHand = randomNumberToHand(randomNumber);
   }
 
   String randomNumberToHand(int randomNumber) {
@@ -46,7 +46,7 @@ class _MyHomePageState extends State<MyHomePage> {
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
-            Text(myHand,style: TextStyle(fontSize: 32),),
+            Text(computerHand,style: TextStyle(fontSize: 32),),
             SizedBox(height: 40),
             Text(myHand,style: TextStyle(fontSize: 32),),
             SizedBox(height: 32),
