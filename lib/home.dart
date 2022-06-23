@@ -40,13 +40,11 @@ class _MyHomePageState extends State<MyHomePage> {
    }
   }
 
-  void judge(){
+  void judge() {
     if (computerHand == myHand) {
-    result = '引き分け';
-
-    } else if (myHand == '✊') {
+      result = '引き分け';
+    } else if (myHand == '✊' && computerHand == '✌️'){}
   }
-
   @override
   Widget build(BuildContext context) {
     return Scaffold(
