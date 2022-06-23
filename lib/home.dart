@@ -18,6 +18,7 @@ class _MyHomePageState extends State<MyHomePage> {
   void selectHand(String selectedHand) {
     myHand = selectedHand;
     generateComputerHand();
+    judge();
     setState((){});
   }
 
@@ -58,6 +59,8 @@ class _MyHomePageState extends State<MyHomePage> {
         myHand == '✋️' && computerHand == '✊'
     ) {
       result = '勝ち';
+    } else {
+      result = '負け';
     }
   }
   @override
