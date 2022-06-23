@@ -26,7 +26,6 @@ class _MyHomePageState extends State<MyHomePage> {
     computerHand = randomNumberToHand(randomNumber);
   }
 
-  void jeu
 
   String randomNumberToHand(int randomNumber) {
    switch (randomNumber) {
@@ -39,6 +38,13 @@ class _MyHomePageState extends State<MyHomePage> {
      default:
        return '✊';
    }
+  }
+
+  void judge(){
+    if (computerHand == myHand) {
+    result = '引き分け';
+
+    } else if (myHand ==) {
   }
 
   @override
