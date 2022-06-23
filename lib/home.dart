@@ -13,6 +13,7 @@ class _MyHomePageState extends State<MyHomePage> {
 
   String computerHand = '✊';
   String myHand = '✊';
+  String result = '引き分け';
 
   void selectHand(String selectedHand) {
     myHand = selectedHand;
@@ -24,6 +25,8 @@ class _MyHomePageState extends State<MyHomePage> {
     final randomNumber = Random().nextInt(3);
     computerHand = randomNumberToHand(randomNumber);
   }
+
+  void jeu
 
   String randomNumberToHand(int randomNumber) {
    switch (randomNumber) {
@@ -46,6 +49,8 @@ class _MyHomePageState extends State<MyHomePage> {
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
+            Text(result,style: TextStyle(fontSize: 32),),
+            SizedBox(height: 32),
             Text(computerHand,style: TextStyle(fontSize: 32),),
             SizedBox(height: 40),
             Text(myHand,style: TextStyle(fontSize: 32),),
