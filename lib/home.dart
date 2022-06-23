@@ -44,7 +44,7 @@ class _MyHomePageState extends State<MyHomePage> {
     if (computerHand == myHand) {
     result = '引き分け';
 
-    } else if (myHand ==) {
+    } else if (myHand == '✊') {
   }
 
   @override
