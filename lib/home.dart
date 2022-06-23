@@ -43,7 +43,9 @@ class _MyHomePageState extends State<MyHomePage> {
   void judge() {
     if (computerHand == myHand) {
       result = '引き分け';
-    } else if (myHand == '✊' && computerHand == '✌️'){}
+    } else if (myHand == '✊' && computerHand == '✌️') {
+      result = '勝ち';
+    }
   }
   @override
   Widget build(BuildContext context) {
