@@ -46,6 +46,9 @@ class _MyHomePageState extends State<MyHomePage> {
     } else if (myHand == '✊' && computerHand == '✌️') {
       result = '勝ち';
     } else if (myHand == '✌️' && computerHand == '✋️') {
+      result = '勝ち';
+    } else if (myHand == '✌️' && computerHand == '✋️') {
+      result = '勝ち';
     }
   }
   @override
