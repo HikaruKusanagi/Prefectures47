@@ -66,7 +66,7 @@ class _Prefectures47State extends State<Prefectures47> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(title: Text('じゃんけん'),),
+      appBar: AppBar(title: Text('Prefecter47'),),
       body: SingleChildScrollView(
         child: Center(
           child: Column(
@@ -74,17 +74,104 @@ class _Prefectures47State extends State<Prefectures47> {
             children: [
               SizedBox(height: 20),
               Row(
-                mainAxisAlignment: MainAxisAlignment.end,
+                mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: [
-                  Container(
-                    height: 100,
-                    width: 100,
-                    color: Colors.blue,
+                  SizedBox(width: 10),
+                  Row(
+                    children: [
+                      Column(
+                        children: [
+                          Container(
+                            height: 50,
+                            width: 50,
+                          ),
+                          Container(
+                            height: 50,
+                            width: 50,
+                          ),
+                          Container(
+                            height: 50,
+                            width: 50,
+                            color: Colors.blue,
+                          ),
+                        ],
+                      ),
+                      Column(
+                        children: [
+                          Container(
+                            height: 50,
+                            width: 50,
+                            color: Colors.blue,
+                          ),
+                          Container(
+                            height: 50,
+                            width: 50,
+                            color: Colors.blue,
+                          ),
+                          Container(
+                            height: 50,
+                            width: 50,
+                            color: Colors.blue,
+                          ),
+                        ],
+                      ),
+                      Column(
+                        children: [
+                          Container(
+                            height: 50,
+                            width: 50,
+                            color: Colors.blue,
+                          ),
+                          Container(
+                            height: 50,
+                            width: 50,
+                            color: Colors.blue,
+                          ),
+                          Container(
+                            height: 50,
+                            width: 50,
+                            color: Colors.blue,
+                          ),
+
+                        ],
+                      ),
+                      Container(
+                        height: 50,
+                        width: 50,
+                      ),
+                      Column(
+                        children: [
+                          Container(
+                            height: 50,
+                            width: 50,
+                          ),
+                        ],
+                      ),
+                    ],
+                  ),
+                  Column(
+                    children: [
+                      InkWell(
+                        onTap: () {
+                          showDialog(
+                              context: context,
+                              builder: (context) {
+                                return AlertDialog(
+                                  title: Text('北海道'),
+                                );
+                              });
+                        },
+                        child: Container(
+                          height: 100,
+                          width: 100,
+                          color: Colors.blue,
+                        ),
+                      ),
+                    ],
                   ),
                   SizedBox(width: 20),
                 ],
               ),
-              SizedBox(height: 10),
               Row(
                 mainAxisAlignment: MainAxisAlignment.end,
                 children: [
@@ -104,6 +191,28 @@ class _Prefectures47State extends State<Prefectures47> {
                     width: 50,
                     color: Colors.blue,
                   ),
+                  SizedBox(width: 170),
+                  Container(
+                    height: 50,
+                    width: 50,
+                    color: Colors.blue,
+                  ),
+                  Container(
+                    height: 50,
+                    width: 50,
+                    color: Colors.blue,
+                  ),
+                  SizedBox(width: 60),
+                ],
+              ),
+              Row(
+                mainAxisAlignment: MainAxisAlignment.end,
+                children: [
+                  Container(
+                    height: 50,
+                    width: 50,
+                    color: Colors.blue,
+                  ),
                   Container(
                     height: 50,
                     width: 50,
@@ -125,26 +234,10 @@ class _Prefectures47State extends State<Prefectures47> {
                     width: 50,
                     color: Colors.blue,
                   ),
-                  SizedBox(width: 60),
-                ],
-              ),
-              Row(
-                mainAxisAlignment: MainAxisAlignment.end,
-                children: [
                   Container(
                     height: 50,
                     width: 50,
-                    color: Colors.green,
-                  ),
-                  Container(
-                    height: 50,
-                    width: 50,
-                    color: Colors.green,
-                  ),
-                  Container(
-                    height: 50,
-                    width: 50,
-                    color: Colors.green,
+                    color: Colors.blue,
                   ),
                   Container(
                     height: 50,
@@ -160,22 +253,22 @@ class _Prefectures47State extends State<Prefectures47> {
                   Container(
                     height: 50,
                     width: 50,
-                    color: Colors.green,
+                    color: Colors.blue,
                   ),
                   Container(
                     height: 50,
                     width: 50,
-                    color: Colors.green,
+                    color: Colors.blue,
                   ),
                   Container(
                     height: 50,
                     width: 50,
-                    color: Colors.green,
+                    color: Colors.blue,
                   ),
                   Container(
                     height: 50,
                     width: 50,
-                    color: Colors.red,
+                    color: Colors.blue,
                   ),
                   SizedBox(width: 60),
                 ],
@@ -186,24 +279,24 @@ class _Prefectures47State extends State<Prefectures47> {
                   Container(
                     height: 50,
                     width: 50,
-                    color: Colors.green,
+                    color: Colors.blue,
                   ),
                   Container(
                     height: 50,
                     width: 50,
-                    color: Colors.red,
+                    color: Colors.blue,
                   ),
                   Container(
                     height: 50,
                     width: 50,
-                    color: Colors.red,
+                    color: Colors.blue,
                   ),
                   Column(
                     children: [
                       Container(
                         height: 50,
                         width: 50,
-                        color: Colors.red,
+                        color: Colors.blue,
                       ),
                     ],
                   ),
@@ -216,27 +309,27 @@ class _Prefectures47State extends State<Prefectures47> {
                   Container(
                     height: 50,
                     width: 50,
-                    color: Colors.green,
+                    color: Colors.blue,
                   ),
                   Container(
                     height: 50,
                     width: 50,
-                    color: Colors.green,
+                    color: Colors.blue,
                   ),
                   Container(
                     height: 50,
                     width: 50,
-                    color: Colors.red,
+                    color: Colors.blue,
                   ),
                   Container(
                     height: 50,
                     width: 50,
-                    color: Colors.red,
+                    color: Colors.blue,
                   ),
                   Container(
                     height: 50,
                     width: 50,
-                    color: Colors.red,
+                    color: Colors.blue,
                   ),
                   SizedBox(width: 60),
                 ],
@@ -247,29 +340,121 @@ class _Prefectures47State extends State<Prefectures47> {
                   Container(
                     height: 50,
                     width: 50,
-                    color: Colors.green,
                   ),
                   Container(
                     height: 50,
                     width: 50,
-                    color: Colors.green,
+                    color: Colors.blue,
                   ),
                   Container(
                     height: 50,
                     width: 50,
-                    color: Colors.red,
+                    color: Colors.blue,
                   ),
                   Container(
                     height: 50,
                     width: 50,
-                    color: Colors.red,
+                    color: Colors.blue,
                   ),
                   Container(
                     height: 50,
                     width: 50,
-                    color: Colors.red,
+                    color: Colors.blue,
+                  ),
+                  Container(
+                    height: 50,
+                    width: 50,
+                    color: Colors.blue,
                   ),
                   SizedBox(width: 60),
+                ],
+              ),
+              Row(
+                mainAxisAlignment: MainAxisAlignment.end,
+                children: [
+                  Container(
+                    height: 50,
+                    width: 50,
+                  ),
+                  Container(
+                    height: 50,
+                    width: 50,
+                    color: Colors.blue,
+                  ),
+                  Container(
+                    height: 50,
+                    width: 50,
+                    color: Colors.blue,
+                  ),
+                  Container(
+                    height: 50,
+                    width: 50,
+                    color: Colors.blue,
+                  ),
+                  Container(
+                    height: 50,
+                    width: 50,
+
+                  ),
+                  Container(
+                    height: 50,
+                    width: 50,
+
+                  ),
+                  SizedBox(width: 60),
+                ],
+              ),
+              Row(
+                mainAxisAlignment: MainAxisAlignment.end,
+                children: [
+                  Container(
+                    height: 50,
+                    width: 50,
+                    color: Colors.blue,
+                  ),
+                  Container(
+                    height: 50,
+                    width: 50,
+                    color: Colors.blue,
+                  ),
+                  Container(
+                    height: 50,
+                    width: 50,
+                    color: Colors.blue,
+                  ),
+                  Container(
+                    height: 50,
+                    width: 50,
+                    color: Colors.blue,
+                  ),
+
+                  SizedBox(width: 160),
+                ],
+              ),
+              Row(
+                mainAxisAlignment: MainAxisAlignment.end,
+                children: [
+                  Container(
+                    height: 50,
+                    width: 50,
+                    color: Colors.blue,
+                  ),
+                  Container(
+                    height: 50,
+                    width: 50,
+                    color: Colors.blue,
+                  ),
+                  Container(
+                    height: 50,
+                    width: 50,
+                    color: Colors.blue,
+                  ),
+                  Container(
+                    height: 50,
+                    width: 50,
+                    color: Colors.blue,
+                  ),
+                  SizedBox(width: 160),
                 ],
               ),
             ],
