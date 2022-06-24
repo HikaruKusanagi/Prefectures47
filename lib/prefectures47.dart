@@ -133,7 +133,7 @@ class _Prefectures47State extends State<Prefectures47> {
                 children: [
                   Container(
                     height: 50,
-                    width: 70,
+                    width: 50,
                     color: Colors.green,
                   ),
                   Container(
@@ -159,11 +159,6 @@ class _Prefectures47State extends State<Prefectures47> {
                 children: [
                   Container(
                     height: 50,
-                    width: 70,
-                    color: Colors.green,
-                  ),
-                  Container(
-                    height: 50,
                     width: 50,
                     color: Colors.green,
                   ),
@@ -174,10 +169,15 @@ class _Prefectures47State extends State<Prefectures47> {
                   ),
                   Container(
                     height: 50,
-                    width: 60,
+                    width: 50,
+                    color: Colors.green,
+                  ),
+                  Container(
+                    height: 50,
+                    width: 50,
                     color: Colors.red,
                   ),
-                  SizedBox(width: 50),
+                  SizedBox(width: 60),
                 ],
               ),
               Row(
@@ -185,29 +185,29 @@ class _Prefectures47State extends State<Prefectures47> {
                 children: [
                   Container(
                     height: 50,
-                    width: 70,
-                    color: Colors.green,
-                  ),
-                  Container(
-                    height: 50,
                     width: 50,
                     color: Colors.green,
                   ),
                   Container(
                     height: 50,
                     width: 50,
-                    color: Colors.green,
+                    color: Colors.red,
+                  ),
+                  Container(
+                    height: 50,
+                    width: 50,
+                    color: Colors.red,
                   ),
                   Column(
                     children: [
                       Container(
                         height: 50,
-                        width: 60,
+                        width: 50,
                         color: Colors.red,
                       ),
                     ],
                   ),
-                  SizedBox(width: 110),
+                  SizedBox(width: 60),
                 ],
               ),
               Row(
@@ -215,11 +215,6 @@ class _Prefectures47State extends State<Prefectures47> {
                 children: [
                   Container(
                     height: 50,
-                    width: 70,
-                    color: Colors.green,
-                  ),
-                  Container(
-                    height: 50,
                     width: 50,
                     color: Colors.green,
                   ),
@@ -230,39 +225,51 @@ class _Prefectures47State extends State<Prefectures47> {
                   ),
                   Container(
                     height: 50,
-                    width: 60,
+                    width: 50,
                     color: Colors.red,
                   ),
-                  SizedBox(width: 140),
+                  Container(
+                    height: 50,
+                    width: 50,
+                    color: Colors.red,
+                  ),
+                  Container(
+                    height: 50,
+                    width: 50,
+                    color: Colors.red,
+                  ),
+                  SizedBox(width: 60),
                 ],
               ),
-              Text(result,style: TextStyle(fontSize: 32),),
-              SizedBox(height: 32),
-              Text(computerHand,style: TextStyle(fontSize: 32),),
-              SizedBox(height: 40),
-              Text(myHand,style: TextStyle(fontSize: 32),),
-              SizedBox(height: 32),
               Row(
-                mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                mainAxisAlignment: MainAxisAlignment.end,
                 children: [
-                  ElevatedButton(
-                    onPressed: () {
-                      selectHand('✊');
-                    },
-                    child: Text('✊'),
+                  Container(
+                    height: 50,
+                    width: 50,
+                    color: Colors.green,
                   ),
-                  ElevatedButton(
-                    onPressed: () {
-                      selectHand('✌️');
-                    },
-                    child: Text('✌️'),
+                  Container(
+                    height: 50,
+                    width: 50,
+                    color: Colors.green,
                   ),
-                  ElevatedButton(
-                    onPressed: () {
-                      selectHand('✋');
-                    },
-                    child: Text('✋'),
+                  Container(
+                    height: 50,
+                    width: 50,
+                    color: Colors.red,
                   ),
+                  Container(
+                    height: 50,
+                    width: 50,
+                    color: Colors.red,
+                  ),
+                  Container(
+                    height: 50,
+                    width: 50,
+                    color: Colors.red,
+                  ),
+                  SizedBox(width: 60),
                 ],
               ),
             ],
