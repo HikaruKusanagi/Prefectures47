@@ -69,6 +69,7 @@ class _Prefectures47State extends State<Prefectures47> {
       body: Column(
         children: [
           Text('ttt'),
+          Text('ttt'),
         ],
       ),
     );
