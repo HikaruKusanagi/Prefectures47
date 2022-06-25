@@ -66,7 +66,9 @@ class _Prefectures47State extends State<Prefectures47> {
       appBar: AppBar(
         title: Text('Prefecter47'),
       ),
-      body: Column(),
+      body: Column(
+        children: [Center()],
+      ),
     );
   }
 }
