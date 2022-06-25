@@ -2,15 +2,14 @@ import 'dart:math';
 
 import 'package:flutter/material.dart';
 
-class  Prefectures47 extends StatefulWidget {
-  const Prefectures47 ({Key? key}) : super(key: key);
+class Prefectures47 extends StatefulWidget {
+  const Prefectures47({Key? key}) : super(key: key);
 
   @override
   State<Prefectures47> createState() => _Prefectures47State();
 }
 
 class _Prefectures47State extends State<Prefectures47> {
-
   String computerHand = '✊';
   String myHand = '✊';
   String result = '引き分け';
@@ -19,14 +18,13 @@ class _Prefectures47State extends State<Prefectures47> {
     myHand = selectedHand;
     generateComputerHand();
     judge();
-    setState((){});
+    setState(() {});
   }
 
   void generateComputerHand() {
     final randomNumber = Random().nextInt(3);
     computerHand = randomNumberToHand(randomNumber);
   }
-
 
   String randomNumberToHand(int randomNumber) {
     switch (randomNumber) {
@@ -53,414 +51,22 @@ class _Prefectures47State extends State<Prefectures47> {
     // }
     if (computerHand == myHand) {
       result = '引き分け';
-    } else if (
-    myHand == '✊' && computerHand == '✌️' ||
+    } else if (myHand == '✊' && computerHand == '✌️' ||
         myHand == '✌️' && computerHand == '✋️' ||
-        myHand == '✋️' && computerHand == '✊'
-    ) {
+        myHand == '✋️' && computerHand == '✊') {
       result = '勝ち';
     } else {
       result = '負け';
     }
   }
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(title: Text('Prefecter47'),),
-      body: SingleChildScrollView(
-        child: Center(
-          child: Column(
-            mainAxisAlignment: MainAxisAlignment.center,
-            children: [
-              SizedBox(height: 20),
-              Row(
-                mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                children: [
-                  SizedBox(width: 10),
-                  Row(
-                    children: [
-                      Column(
-                        children: [
-                          Container(
-                            height: 50,
-                            width: 50,
-                          ),
-                          Container(
-                            height: 50,
-                            width: 50,
-                          ),
-                          Container(
-                            height: 50,
-                            width: 50,
-                            color: Colors.blue,
-                          ),
-                        ],
-                      ),
-                      Column(
-                        children: [
-                          Container(
-                            height: 50,
-                            width: 50,
-                            color: Colors.blue,
-                          ),
-                          Container(
-                            height: 50,
-                            width: 50,
-                            color: Colors.blue,
-                          ),
-                          Container(
-                            height: 50,
-                            width: 50,
-                            color: Colors.blue,
-                          ),
-                        ],
-                      ),
-                      Column(
-                        children: [
-                          Container(
-                            height: 50,
-                            width: 50,
-                            color: Colors.blue,
-                          ),
-                          Container(
-                            height: 50,
-                            width: 50,
-                            color: Colors.blue,
-                          ),
-                          Container(
-                            height: 50,
-                            width: 50,
-                            color: Colors.blue,
-                          ),
-
-                        ],
-                      ),
-                      Container(
-                        height: 50,
-                        width: 50,
-                      ),
-                      Column(
-                        children: [
-                          Container(
-                            height: 50,
-                            width: 50,
-                          ),
-                        ],
-                      ),
-                    ],
-                  ),
-                  Column(
-                    children: [
-                      InkWell(
-                        onTap: () {
-                          showDialog(
-                              context: context,
-                              builder: (context) {
-                                return AlertDialog(
-                                  title: Text('北海道'),
-                                );
-                              });
-                        },
-                        child: Container(
-                          height: 100,
-                          width: 100,
-                          color: Colors.blue,
-                        ),
-                      ),
-                    ],
-                  ),
-                  SizedBox(width: 20),
-                ],
-              ),
-              Row(
-                mainAxisAlignment: MainAxisAlignment.end,
-                children: [
-                  Container(
-                    height: 50,
-                    width: 100,
-                    color: Colors.blue,
-                  ),
-                  SizedBox(width: 60),
-                ],
-              ),
-              Row(
-                mainAxisAlignment: MainAxisAlignment.end,
-                children: [
-                  Container(
-                    height: 50,
-                    width: 50,
-                    color: Colors.blue,
-                  ),
-                  SizedBox(width: 170),
-                  Container(
-                    height: 50,
-                    width: 50,
-                    color: Colors.blue,
-                  ),
-                  Container(
-                    height: 50,
-                    width: 50,
-                    color: Colors.blue,
-                  ),
-                  SizedBox(width: 60),
-                ],
-              ),
-              Row(
-                mainAxisAlignment: MainAxisAlignment.end,
-                children: [
-                  Container(
-                    height: 50,
-                    width: 50,
-                    color: Colors.blue,
-                  ),
-                  Container(
-                    height: 50,
-                    width: 50,
-                    color: Colors.blue,
-                  ),
-                  SizedBox(width: 60),
-                ],
-              ),
-              Row(
-                mainAxisAlignment: MainAxisAlignment.end,
-                children: [
-                  Container(
-                    height: 50,
-                    width: 50,
-                    color: Colors.blue,
-                  ),
-                  Container(
-                    height: 50,
-                    width: 50,
-                    color: Colors.blue,
-                  ),
-                  Container(
-                    height: 50,
-                    width: 50,
-                    color: Colors.blue,
-                  ),
-                  Container(
-                    height: 50,
-                    width: 50,
-                    color: Colors.blue,
-                  ),
-                  SizedBox(width: 60),
-                ],
-              ),
-              Row(
-                mainAxisAlignment: MainAxisAlignment.end,
-                children: [
-                  Container(
-                    height: 50,
-                    width: 50,
-                    color: Colors.blue,
-                  ),
-                  Container(
-                    height: 50,
-                    width: 50,
-                    color: Colors.blue,
-                  ),
-                  Container(
-                    height: 50,
-                    width: 50,
-                    color: Colors.blue,
-                  ),
-                  Container(
-                    height: 50,
-                    width: 50,
-                    color: Colors.blue,
-                  ),
-                  SizedBox(width: 60),
-                ],
-              ),
-              Row(
-                mainAxisAlignment: MainAxisAlignment.end,
-                children: [
-                  Container(
-                    height: 50,
-                    width: 50,
-                    color: Colors.blue,
-                  ),
-                  Container(
-                    height: 50,
-                    width: 50,
-                    color: Colors.blue,
-                  ),
-                  Container(
-                    height: 50,
-                    width: 50,
-                    color: Colors.blue,
-                  ),
-                  Column(
-                    children: [
-                      Container(
-                        height: 50,
-                        width: 50,
-                        color: Colors.blue,
-                      ),
-                    ],
-                  ),
-                  SizedBox(width: 60),
-                ],
-              ),
-              Row(
-                mainAxisAlignment: MainAxisAlignment.end,
-                children: [
-                  Container(
-                    height: 50,
-                    width: 50,
-                    color: Colors.blue,
-                  ),
-                  Container(
-                    height: 50,
-                    width: 50,
-                    color: Colors.blue,
-                  ),
-                  Container(
-                    height: 50,
-                    width: 50,
-                    color: Colors.blue,
-                  ),
-                  Container(
-                    height: 50,
-                    width: 50,
-                    color: Colors.blue,
-                  ),
-                  Container(
-                    height: 50,
-                    width: 50,
-                    color: Colors.blue,
-                  ),
-                  SizedBox(width: 60),
-                ],
-              ),
-              Row(
-                mainAxisAlignment: MainAxisAlignment.end,
-                children: [
-                  Container(
-                    height: 50,
-                    width: 50,
-                  ),
-                  Container(
-                    height: 50,
-                    width: 50,
-                    color: Colors.blue,
-                  ),
-                  Container(
-                    height: 50,
-                    width: 50,
-                    color: Colors.blue,
-                  ),
-                  Container(
-                    height: 50,
-                    width: 50,
-                    color: Colors.blue,
-                  ),
-                  Container(
-                    height: 50,
-                    width: 50,
-                    color: Colors.blue,
-                  ),
-                  Container(
-                    height: 50,
-                    width: 50,
-                    color: Colors.blue,
-                  ),
-                  SizedBox(width: 60),
-                ],
-              ),
-              Row(
-                mainAxisAlignment: MainAxisAlignment.end,
-                children: [
-                  Container(
-                    height: 50,
-                    width: 50,
-                  ),
-                  Container(
-                    height: 50,
-                    width: 50,
-                    color: Colors.blue,
-                  ),
-                  Container(
-                    height: 50,
-                    width: 50,
-                    color: Colors.blue,
-                  ),
-                  Container(
-                    height: 50,
-                    width: 50,
-                    color: Colors.blue,
-                  ),
-                  Container(
-                    height: 50,
-                    width: 50,
-
-                  ),
-                  Container(
-                    height: 50,
-                    width: 50,
-
-                  ),
-                  SizedBox(width: 60),
-                ],
-              ),
-              Row(
-                mainAxisAlignment: MainAxisAlignment.end,
-                children: [
-                  Container(
-                    height: 50,
-                    width: 50,
-                    color: Colors.blue,
-                  ),
-                  Container(
-                    height: 50,
-                    width: 50,
-                    color: Colors.blue,
-                  ),
-                  Container(
-                    height: 50,
-                    width: 50,
-                    color: Colors.blue,
-                  ),
-                  Container(
-                    height: 50,
-                    width: 50,
-                    color: Colors.blue,
-                  ),
-
-                  SizedBox(width: 160),
-                ],
-              ),
-              Row(
-                mainAxisAlignment: MainAxisAlignment.end,
-                children: [
-                  Container(
-                    height: 50,
-                    width: 50,
-                    color: Colors.blue,
-                  ),
-                  Container(
-                    height: 50,
-                    width: 50,
-                    color: Colors.blue,
-                  ),
-                  Container(
-                    height: 50,
-                    width: 50,
-                    color: Colors.blue,
-                  ),
-                  Container(
-                    height: 50,
-                    width: 50,
-                    color: Colors.blue,
-                  ),
-                  SizedBox(width: 160),
-                ],
-              ),
-            ],
-          ),
-        ),
+      appBar: AppBar(
+        title: Text('Prefecter47'),
       ),
+      body: Column(),
     );
   }
 }
