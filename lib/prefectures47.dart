@@ -67,7 +67,7 @@ class _Prefectures47State extends State<Prefectures47> {
         title: Text('Prefecter47'),
       ),
       body: Column(
-        children: [Center()],
+        children: [Text('ttt'), Center()],
       ),
     );
   }
