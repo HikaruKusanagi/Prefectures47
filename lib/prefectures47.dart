@@ -66,9 +66,15 @@ class _Prefectures47State extends State<Prefectures47> {
       appBar: AppBar(
         title: Text('Prefecter47'),
       ),
-      body: Column(
-        children: [],
-      ),
+      body: Column(children: [
+        Center(
+          child: Text('TodofuQuiz',
+              style: TextStyle(
+                fontWeight: FontWeight.bold,
+                fontSize: 32,
+              )),
+        ),
+      ]),
     );
   }
 }
