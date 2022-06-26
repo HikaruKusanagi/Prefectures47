@@ -75,6 +75,19 @@ class _Prefectures47State extends State<Prefectures47> {
                 fontSize: 53,
               )),
         ),
+        SizedBox(height: 142),
+        Center(
+          child: TextButton(
+            child: Text(
+              'はじめる',
+              style: TextStyle(
+                fontSize: 32,
+                fontWeight: FontWeight.bold,
+              ),
+            ),
+            onPressed: () => print('クリックされました'),
+          ),
+        ),
       ]),
     );
   }
