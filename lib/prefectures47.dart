@@ -69,7 +69,7 @@ class _Prefectures47State extends State<Prefectures47> {
       body: Column(children: [
         SizedBox(height: 130),
         Center(
-          child: Text('TodofuQuiz',
+          child: Text('TodofuQuiz   47',
               style: TextStyle(
                 fontWeight: FontWeight.bold,
                 fontSize: 42,
