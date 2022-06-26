@@ -63,11 +63,8 @@ class _Prefectures47State extends State<Prefectures47> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        title: Text('Prefecter47'),
-      ),
       body: Column(children: [
-        SizedBox(height: 140),
+        SizedBox(height: 230),
         Center(
           child: Text('TodofuQuiz  47',
               style: TextStyle(
@@ -80,6 +77,30 @@ class _Prefectures47State extends State<Prefectures47> {
           child: TextButton(
             child: Text(
               'はじめる',
+              style: TextStyle(
+                fontSize: 32,
+                fontWeight: FontWeight.bold,
+              ),
+            ),
+            onPressed: () => print('クリックされました'),
+          ),
+        ),
+        Center(
+          child: TextButton(
+            child: Text(
+              '利用規約',
+              style: TextStyle(
+                fontSize: 32,
+                fontWeight: FontWeight.bold,
+              ),
+            ),
+            onPressed: () => print('クリックされました'),
+          ),
+        ),
+        Center(
+          child: TextButton(
+            child: Text(
+              'お問い合せ',
               style: TextStyle(
                 fontSize: 32,
                 fontWeight: FontWeight.bold,
