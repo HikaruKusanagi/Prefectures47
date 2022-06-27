@@ -1,3 +1,5 @@
+import 'dart:math';
+
 import 'package:flutter/material.dart';
 import 'package:flutter/src/foundation/key.dart';
 import 'package:flutter/src/widgets/framework.dart';
@@ -10,6 +12,14 @@ class QuizPage extends StatefulWidget {
 }
 
 class _QuizPageState extends State<QuizPage> {
+  List<String> imgURLs = [
+    'images/1_hokkaidou.png',
+    'images/2_touhoku1__aomori.png',
+    'images/2_touhoku4__akita.png',
+  ];
+final ram = Random(DateTime.now().millisecondsSinceEpoch);
+  _imgURL = imgURLs[ram.nextInt(imgURLs.length)];
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -18,7 +28,7 @@ class _QuizPageState extends State<QuizPage> {
       body: Column(
         children: [
           SizedBox(height: 30),
-          Image.asset('images/1_hokkaidou.png'),
+         Image.asset(_imgURL,height: 300,width: 300,),
           SizedBox(height: 60),
           Row(
             children: [
