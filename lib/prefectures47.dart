@@ -1,6 +1,7 @@
 import 'dart:math';
 
 import 'package:flutter/material.dart';
+import 'package:prefectures47/quiz_page.dart';
 
 class Prefectures47 extends StatefulWidget {
   const Prefectures47({Key? key}) : super(key: key);
@@ -64,25 +65,30 @@ class _Prefectures47State extends State<Prefectures47> {
   Widget build(BuildContext context) {
     return Scaffold(
       body: Column(children: [
-        SizedBox(height: 230),
+        SizedBox(height: 32),
         Center(
-          child: Text('TodofuQuiz  47',
+          child: Text('Prefectures47',
               style: TextStyle(
                 fontWeight: FontWeight.bold,
-                fontSize: 53,
+                fontSize: 40,
               )),
         ),
-        SizedBox(height: 142),
+        SizedBox(height: 22),
+        Image.asset('images/nihonchizu_area.png'),
         Center(
           child: TextButton(
             child: Text(
               'はじめる',
               style: TextStyle(
+                color: Colors.blue,
                 fontSize: 32,
                 fontWeight: FontWeight.bold,
               ),
             ),
-            onPressed: () => print('クリックされました'),
+            onPressed: () => Navigator.push(
+              context,
+              MaterialPageRoute(builder: (context) => QuizPage()),
+            ),
           ),
         ),
         Center(
@@ -90,7 +96,8 @@ class _Prefectures47State extends State<Prefectures47> {
             child: Text(
               '利用規約',
               style: TextStyle(
-                fontSize: 32,
+                color: Colors.black,
+                fontSize: 20,
                 fontWeight: FontWeight.bold,
               ),
             ),
@@ -100,9 +107,10 @@ class _Prefectures47State extends State<Prefectures47> {
         Center(
           child: TextButton(
             child: Text(
-              'お問い合せ',
+              'お問い合わせ',
               style: TextStyle(
-                fontSize: 32,
+                color: Colors.black,
+                fontSize: 20,
                 fontWeight: FontWeight.bold,
               ),
             ),
