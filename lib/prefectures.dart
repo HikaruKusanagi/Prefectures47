@@ -12,12 +12,18 @@ class MyWidget extends StatefulWidget {
 }
 
 class _MyWidgetState extends State<MyWidget> {
-  String myHand = '✊';
-  String result = '正解';
+  Image Hokaido = Image.asset('images/1_hokkaidou.png');
+  String correctanswer = '正解';
   String computerHand = '✊';
 
-  void selectHand(String selectedHand) {
-    myHand = selectedHand;
+  List<String> imgURLs = [
+    'images/1_hokkaidou.png',
+    'images/2_touhoku1__aomori.png',
+    'images/2_touhoku4__akita.png',
+  ];
+
+  void selectHand(Image selectedHand) {
+    Hokaido = selectedHand;
     generateComputerHand();
     judge();
     setState(() {});
