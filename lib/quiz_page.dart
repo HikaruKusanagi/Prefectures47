@@ -13,6 +13,7 @@ class QuizPage extends StatefulWidget {
 
 class _QuizPageState extends State<QuizPage> {
   String? _imgURL;
+  String? _imgURL1;
   List<String> imgURLs = [
     //ここに表示したい画像URLを追加
     'images/1_hokkaidou.png',
@@ -21,7 +22,6 @@ class _QuizPageState extends State<QuizPage> {
   ];
 
   final ram = Random(DateTime.now().millisecondsSinceEpoch);
-  
 
   @override
   Widget build(BuildContext context) {
