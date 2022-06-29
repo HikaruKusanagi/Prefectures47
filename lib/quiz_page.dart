@@ -21,7 +21,7 @@ class _QuizPageState extends State<QuizPage> {
   ];
 
   final ram = Random(DateTime.now().millisecondsSinceEpoch);
-  final _imgURL = imgURLs[ram.nextInt(imgURLs.length)];
+  
 
   @override
   Widget build(BuildContext context) {
