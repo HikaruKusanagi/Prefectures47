@@ -19,10 +19,12 @@ class _QuizPageState extends State<QuizPage> {
       //ここに表示したい画像URLを追加
       'images/1_hokkaidou.png',
       'images/2_touhoku1__aomori.png',
+      'images/2_touhoku2__iwate.png',
       'images/2_touhoku4__akita.png',
     ];
 
-    final ram = Random(DateTime.now().millisecondsSinceEpoch); //乱数の種を時間ごとに変更するためのDataTime
+    final ram = Random(
+        DateTime.now().millisecondsSinceEpoch); //乱数の種を時間ごとに変更するためのDataTime
     _imgURL = imgURLs[ram.nextInt(imgURLs.length)];
 
     return Scaffold(
