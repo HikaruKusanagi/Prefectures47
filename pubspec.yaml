@@ -70,8 +70,10 @@ flutter:
      - images/2_touhoku3__miyagi.png
      - images/2_touhoku4__akita.png
      - images/2_touhoku5__yamagata.png
-     - images/2_touhoku5__yamagata.png
      - images/3_kantou1__ibaraki.png
+     - images/3_kantou2__tochigi.png
+     - images/3_kantou3__gunma.png
+    
      
   #   - images/a_dot_ham.jpeg
 
