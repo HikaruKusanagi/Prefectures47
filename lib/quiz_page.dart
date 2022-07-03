@@ -35,7 +35,7 @@ class _QuizPageState extends State<QuizPage> {
       body: Column(
         children: [
           SizedBox(height: 30),
-          Image.asset(_imgURL!),
+          Image.asset(_imgURL),
           SizedBox(height: 60),
           Row(
             children: [
