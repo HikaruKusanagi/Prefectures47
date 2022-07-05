@@ -34,7 +34,8 @@ class _QuizPageState extends State<QuizPage> {
           AppBar(title: Text('第一問、この地形は何県？'), backgroundColor: Colors.black),
       body: Column(
         children: [
-          Image.asset(_imgURL),
+          SizedBox(height: 30),
+          Image.asset(_imgURL!),
           SizedBox(height: 60),
           Row(
             children: [
