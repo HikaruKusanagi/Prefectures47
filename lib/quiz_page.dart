@@ -22,9 +22,9 @@ class _QuizPageState extends State<QuizPage> {
       'images/2_touhoku2__iwate.png',
       'images/2_touhoku3__miyagi.png',
       'images/2_touhoku4__akita.png',
-      'images/2_touhoku5__yamagata.png'
+      'images/2_touhoku5__yamagata.png',
+      'images/3_kantou1__ibaraki.png',
     ];
-
     final ram = Random(
         DateTime.now().millisecondsSinceEpoch); //乱数の種を時間ごとに変更するためのDataTime
     _imgURL = imgURLs[ram.nextInt(imgURLs.length)];
