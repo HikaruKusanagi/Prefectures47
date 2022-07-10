@@ -32,6 +32,7 @@ class _QuizPageState extends State<QuizPage> {
       'images/4_chuubu2_nagano.png',
       'images/4_chuubu3_niigata.png',
       'images/4_chuubu4_toyama.png',
+      'images/4_chuubu5_ishikawa.png',
     ];
     final ram = Random(
         DateTime.now().millisecondsSinceEpoch); //乱数の種を時間ごとに変更するためのDataTime
