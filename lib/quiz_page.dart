@@ -25,6 +25,7 @@ class _QuizPageState extends State<QuizPage> {
       'images/2_touhoku5__yamagata.png',
       'images/3_kantou1__ibaraki.png',
       'images/3_kantou2__tochigi.png',
+      'images/3_kantou3__gunma.png',
       'images/3_kantou5__chiba.png',
     ];
     final ram = Random(
