@@ -1,6 +1,7 @@
 import 'dart:math';
 
 import 'package:flutter/material.dart';
+import 'package:prefectures47/mapselection.dart';
 import 'package:prefectures47/quiz_page.dart';
 
 class Prefectures47 extends StatefulWidget {
@@ -87,7 +88,7 @@ class _Prefectures47State extends State<Prefectures47> {
             ),
             onPressed: () => Navigator.push(
               context,
-              MaterialPageRoute(builder: (context) => QuizPage()),
+              MaterialPageRoute(builder: (context) => MapSelection()),
             ),
           ),
         ),
