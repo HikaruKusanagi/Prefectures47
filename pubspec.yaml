@@ -101,6 +101,15 @@ flutter:
      - images/7_shikoku2_ehime.png
      - images/7_shikoku3_tokushima.png
      - images/7_shikoku4_kouchi.png
+     - images/thumbnail_map1_touhoku.jpeg
+     - images/thumbnail_map2_kantou.jpeg
+     - images/thumbnail_map3_chuubu.jpeg
+     - images/thumbnail_map4_kinki.jpeg
+     - images/thumbnail_map5_chuugoku.jpeg
+     - images/thumbnail_map6_shikoku.jpeg
+     - images/thumbnail_map7_kyusyu.jpeg
+  
+  
      
      
     
