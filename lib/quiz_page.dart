@@ -87,6 +87,7 @@ class _QuizPageState extends State<QuizPage> {
                       onPressed: () => print('クリックされました'),
                     ),
                   ),
+                  SizedBox(width: 30),
                   Center(
                     child: TextButton(
                       style: TextButton.styleFrom(
