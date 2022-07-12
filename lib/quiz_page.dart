@@ -68,7 +68,6 @@ class _QuizPageState extends State<QuizPage> {
             child: ListView(children: [
               Row(
                 children: [
-                  SizedBox(width: 20),
                   Center(
                     child: TextButton(
                       style: TextButton.styleFrom(
