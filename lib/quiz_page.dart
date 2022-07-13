@@ -66,7 +66,6 @@ class _QuizPageState extends State<QuizPage> {
           Image.asset(_imgURL),
           Expanded(
             child: ListView(children: [
-              SizedBox(width: 30),
               Row(
                 children: [
                   Center(
