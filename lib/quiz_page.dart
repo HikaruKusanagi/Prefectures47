@@ -1,8 +1,6 @@
 import 'dart:math';
 
 import 'package:flutter/material.dart';
-import 'package:flutter/src/foundation/key.dart';
-import 'package:flutter/src/widgets/framework.dart';
 import 'package:prefectures47/name_of_prefectures.dart';
 
 class QuizPage extends StatefulWidget {
@@ -67,50 +65,7 @@ class _QuizPageState extends State<QuizPage> {
           Image.asset(_imgURL),
           Expanded(
             child: ListView(children: [
-              Row(
-                children: [
-                  SizedBox(width: 20),
-                  Center(
-                    child: TextButton(
-                      style: TextButton.styleFrom(
-                        side: BorderSide(
-                          color: Colors.black, //色
-                          width: 2, //太さ
-                        ),
-                      ),
-                      child: Text(
-                        NameOfPrefectures.hokkaido,
-                        style: TextStyle(
-                          color: Colors.black,
-                          fontSize: 40,
-                          fontWeight: FontWeight.bold,
-                        ),
-                      ),
-                      onPressed: () => print('クリックされました'),
-                    ),
-                  ),
-                  SizedBox(width: 30),
-                  Center(
-                    child: TextButton(
-                      style: TextButton.styleFrom(
-                        side: BorderSide(
-                          color: Colors.black, //色
-                          width: 2, //太さ
-                        ),
-                      ),
-                      child: Text(
-                        '青森県',
-                        style: TextStyle(
-                          color: Colors.black,
-                          fontSize: 40,
-                          fontWeight: FontWeight.bold,
-                        ),
-                      ),
-                      onPressed: () => print('クリックされました'),
-                    ),
-                  ),
-                ],
-              ),
+              test(),
               SizedBox(height: 30),
               Row(
                 children: [
@@ -124,7 +79,7 @@ class _QuizPageState extends State<QuizPage> {
                         ),
                       ),
                       child: Text(
-                        '岩手県',
+                        NameOfPrefectures.iwate,
                         style: TextStyle(
                           color: Colors.black,
                           fontSize: 40,
@@ -146,7 +101,7 @@ class _QuizPageState extends State<QuizPage> {
                             ),
                           ),
                           child: Text(
-                            '秋田県',
+                            NameOfPrefectures.akita,
                             style: TextStyle(
                               color: Colors.black,
                               fontSize: 40,
@@ -173,7 +128,7 @@ class _QuizPageState extends State<QuizPage> {
                         ),
                       ),
                       child: Text(
-                        '宮城県',
+                        NameOfPrefectures.miyagi,
                         style: TextStyle(
                           color: Colors.black,
                           fontSize: 40,
@@ -195,7 +150,7 @@ class _QuizPageState extends State<QuizPage> {
                             ),
                           ),
                           child: Text(
-                            '山形県',
+                            NameOfPrefectures.yamagata,
                             style: TextStyle(
                               color: Colors.black,
                               fontSize: 40,
@@ -212,5 +167,59 @@ class _QuizPageState extends State<QuizPage> {
             ]),
           ),
         ]));
+  }
+}
+
+class test extends StatelessWidget {
+  const test({
+    Key? key,
+  }) : super(key: key);
+
+  @override
+  Widget build(BuildContext context) {
+    return Row(
+      children: [
+        SizedBox(width: 20),
+        Center(
+          child: TextButton(
+            style: TextButton.styleFrom(
+              side: BorderSide(
+                color: Colors.black, //色
+                width: 2, //太さ
+              ),
+            ),
+            child: Text(
+              NameOfPrefectures.hokkaido,
+              style: TextStyle(
+                color: Colors.black,
+                fontSize: 40,
+                fontWeight: FontWeight.bold,
+              ),
+            ),
+            onPressed: () => print('クリックされました'),
+          ),
+        ),
+        SizedBox(width: 30),
+        Center(
+          child: TextButton(
+            style: TextButton.styleFrom(
+              side: BorderSide(
+                color: Colors.black, //色
+                width: 2, //太さ
+              ),
+            ),
+            child: Text(
+              NameOfPrefectures.aomori,
+              style: TextStyle(
+                color: Colors.black,
+                fontSize: 40,
+                fontWeight: FontWeight.bold,
+              ),
+            ),
+            onPressed: () => print('クリックされました'),
+          ),
+        ),
+      ],
+    );
   }
 }

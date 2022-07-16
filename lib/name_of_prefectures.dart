@@ -2,7 +2,8 @@ class NameOfPrefectures {
   static String hokkaido = '北海道';
   static String aomori = '青森県';
   static String iwate = '岩手県';
-  static String akitak = '秋田県';
+  static String miyagi = '宮城県';
+  static String akita = '秋田県';
   static String yamagata = '山形県';
   static String ibaraki = '茨城県';
   static String tochigi = '栃木県';
