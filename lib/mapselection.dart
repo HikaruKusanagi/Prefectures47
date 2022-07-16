@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:prefectures47/quiz_page.dart';
+import 'package:prefectures47/kanto/kantopage.dart';
+import 'package:prefectures47/tohoku/tohokupage.dart';
 
 class MapSelection extends StatefulWidget {
   const MapSelection({Key? key}) : super(key: key);
@@ -35,7 +36,7 @@ class _MapSelectionState extends State<MapSelection> {
             ),
             onPressed: () => Navigator.push(
               context,
-              MaterialPageRoute(builder: (context) => QuizPage()),
+              MaterialPageRoute(builder: (context) => const TohokuPage()),
             ),
           ),
         ),
@@ -63,7 +64,7 @@ class _MapSelectionState extends State<MapSelection> {
                 ),
                 onPressed: () => Navigator.push(
                   context,
-                  MaterialPageRoute(builder: (context) => QuizPage()),
+                  MaterialPageRoute(builder: (context) => KantoPage()),
                 ),
               ),
             ),
@@ -80,7 +81,7 @@ class _MapSelectionState extends State<MapSelection> {
                 ),
                 onPressed: () => Navigator.push(
                   context,
-                  MaterialPageRoute(builder: (context) => QuizPage()),
+                  MaterialPageRoute(builder: (context) => Container()),
                 ),
               ),
             ),
@@ -106,7 +107,7 @@ class _MapSelectionState extends State<MapSelection> {
                 ),
                 onPressed: () => Navigator.push(
                   context,
-                  MaterialPageRoute(builder: (context) => QuizPage()),
+                  MaterialPageRoute(builder: (context) => Container()),
                 ),
               ),
             ),
@@ -123,7 +124,7 @@ class _MapSelectionState extends State<MapSelection> {
                 ),
                 onPressed: () => Navigator.push(
                   context,
-                  MaterialPageRoute(builder: (context) => QuizPage()),
+                  MaterialPageRoute(builder: (context) => Container()),
                 ),
               ),
             ),
@@ -149,7 +150,7 @@ class _MapSelectionState extends State<MapSelection> {
                 ),
                 onPressed: () => Navigator.push(
                   context,
-                  MaterialPageRoute(builder: (context) => QuizPage()),
+                  MaterialPageRoute(builder: (context) => Container()),
                 ),
               ),
             ),
@@ -166,7 +167,7 @@ class _MapSelectionState extends State<MapSelection> {
                 ),
                 onPressed: () => Navigator.push(
                   context,
-                  MaterialPageRoute(builder: (context) => QuizPage()),
+                  MaterialPageRoute(builder: (context) => Container()),
                 ),
               ),
             ),
