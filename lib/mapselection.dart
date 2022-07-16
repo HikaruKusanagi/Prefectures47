@@ -1,6 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:flutter/src/foundation/key.dart';
-import 'package:flutter/src/widgets/framework.dart';
 import 'package:prefectures47/quiz_page.dart';
 
 class MapSelection extends StatefulWidget {
@@ -99,7 +97,7 @@ class _MapSelectionState extends State<MapSelection> {
             Center(
               child: TextButton(
                 child: Text(
-                  '関東地方',
+                  '近畿地方',
                   style: TextStyle(
                     color: Colors.blue,
                     fontSize: 32,
@@ -116,7 +114,7 @@ class _MapSelectionState extends State<MapSelection> {
             Center(
               child: TextButton(
                 child: Text(
-                  '中部地方',
+                  '中国地方',
                   style: TextStyle(
                     color: Colors.blue,
                     fontSize: 32,
