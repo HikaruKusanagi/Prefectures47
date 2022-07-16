@@ -3,6 +3,7 @@ import 'dart:math';
 import 'package:flutter/material.dart';
 import 'package:flutter/src/foundation/key.dart';
 import 'package:flutter/src/widgets/framework.dart';
+import 'package:prefectures47/name_of_prefectures.dart';
 
 class QuizPage extends StatefulWidget {
   const QuizPage({Key? key}) : super(key: key);
@@ -78,7 +79,7 @@ class _QuizPageState extends State<QuizPage> {
                         ),
                       ),
                       child: Text(
-                        '北海道',
+                        NameOfPrefectures.hokkaido,
                         style: TextStyle(
                           color: Colors.black,
                           fontSize: 40,
