@@ -101,6 +101,15 @@ flutter:
      - images/7_shikoku2_ehime.png
      - images/7_shikoku3_tokushima.png
      - images/7_shikoku4_kouchi.png
+     - images/8_kyuusyuu1_fukuoka.png
+     - images/8_kyuusyuu2_saga.png
+     - images/8_kyuusyuu3_nagasaki.png
+     - images/8_kyuusyuu4_kumamoto.png
+     - images/8_kyuusyuu4_kumamoto.png
+     - images/8_kyuusyuu5_ooita.png
+     - images/8_kyuusyuu6_miyazaki.png
+     - images/8_kyuusyuu7_kagoshima.png
+     - images/9_okinawa.png
      - images/thumbnail_map1_touhoku.jpeg
      - images/thumbnail_map2_kantou.jpeg
      - images/thumbnail_map3_chuubu.jpeg
@@ -108,6 +117,7 @@ flutter:
      - images/thumbnail_map5_chuugoku.jpeg
      - images/thumbnail_map6_shikoku.jpeg
      - images/thumbnail_map7_kyusyu.jpeg
+     
   
   
      
