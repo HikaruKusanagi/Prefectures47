@@ -1,8 +1,6 @@
 import 'dart:math';
-
 import 'package:flutter/material.dart';
 import 'package:prefectures47/mapselection.dart';
-import 'package:prefectures47/tohoku/tohokupage.dart';
 
 class Prefectures47 extends StatefulWidget {
   const Prefectures47({Key? key}) : super(key: key);
