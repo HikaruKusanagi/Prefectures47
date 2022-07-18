@@ -1,6 +1,11 @@
 import 'package:flutter/material.dart';
 import 'package:prefectures47/kanto/kantopage.dart';
+import 'package:prefectures47/kinki/kinkipage.dart';
+import 'package:prefectures47/kyushu/kyushupage.dart';
+import 'package:prefectures47/shikoku/shikokupage.dart';
 import 'package:prefectures47/tohoku/tohokupage.dart';
+
+import 'chubu/chubupage.dart';
 
 class MapSelection extends StatefulWidget {
   const MapSelection({Key? key}) : super(key: key);
@@ -64,7 +69,7 @@ class _MapSelectionState extends State<MapSelection> {
                 ),
                 onPressed: () => Navigator.push(
                   context,
-                  MaterialPageRoute(builder: (context) => KantoPage()),
+                  MaterialPageRoute(builder: (context) => const KantoPage()),
                 ),
               ),
             ),
@@ -81,7 +86,7 @@ class _MapSelectionState extends State<MapSelection> {
                 ),
                 onPressed: () => Navigator.push(
                   context,
-                  MaterialPageRoute(builder: (context) => Container()),
+                  MaterialPageRoute(builder: (context) => const ChubuPage()),
                 ),
               ),
             ),
@@ -107,7 +112,7 @@ class _MapSelectionState extends State<MapSelection> {
                 ),
                 onPressed: () => Navigator.push(
                   context,
-                  MaterialPageRoute(builder: (context) => Container()),
+                  MaterialPageRoute(builder: (context) => const KinkiPage()),
                 ),
               ),
             ),
@@ -124,7 +129,7 @@ class _MapSelectionState extends State<MapSelection> {
                 ),
                 onPressed: () => Navigator.push(
                   context,
-                  MaterialPageRoute(builder: (context) => Container()),
+                  MaterialPageRoute(builder: (context) => const ChubuPage()),
                 ),
               ),
             ),
@@ -150,7 +155,7 @@ class _MapSelectionState extends State<MapSelection> {
                 ),
                 onPressed: () => Navigator.push(
                   context,
-                  MaterialPageRoute(builder: (context) => Container()),
+                  MaterialPageRoute(builder: (context) => const ShikokuPage()),
                 ),
               ),
             ),
@@ -167,7 +172,7 @@ class _MapSelectionState extends State<MapSelection> {
                 ),
                 onPressed: () => Navigator.push(
                   context,
-                  MaterialPageRoute(builder: (context) => Container()),
+                  MaterialPageRoute(builder: (context) => const KyushuPage()),
                 ),
               ),
             ),
