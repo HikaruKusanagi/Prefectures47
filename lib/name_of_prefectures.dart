@@ -23,13 +23,13 @@ class NameOfPrefectures {
   static String gifu = '岐阜県';
   static String mie = '三重県';
   static String shiga = '滋賀県';
-  static String kyouto = '京都';
-  static String osakaken = '大阪県';
+  static String kyoto = '京都府';
+  static String osaka = '大阪県';
   static String hyougo = '兵庫県';
   static String nara = '奈良県';
   static String tottri = '鳥取県';
   static String shimane = '島根県';
-  static String okayamaken = '岡山県';
+  static String okayama = '岡山県';
   static String hiaroshima = '広島県';
   static String yamaguchi = '山口県';
   static String kagawa = '香川県';
