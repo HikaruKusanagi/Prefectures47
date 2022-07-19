@@ -4,7 +4,6 @@ import 'package:prefectures47/kinki/kinkipage.dart';
 import 'package:prefectures47/kyushu/kyushupage.dart';
 import 'package:prefectures47/shikoku/shikokupage.dart';
 import 'package:prefectures47/tohoku/tohokupage.dart';
-
 import 'chubu/chubupage.dart';
 
 class MapSelection extends StatefulWidget {
