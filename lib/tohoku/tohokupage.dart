@@ -1,7 +1,7 @@
 import 'dart:math';
 
 import 'package:flutter/material.dart';
-import 'package:prefectures47/tohoku/tohoku.widget/tohokuwidget.dart';
+import 'package:prefectures47/name_of_prefectures.dart';
 import 'package:prefectures47/tohoku/tohoku.widget/tohokuwidget1.dart';
 import 'package:prefectures47/tohoku/tohoku.widget/tohokuwidget2.dart';
 
@@ -15,15 +15,16 @@ class TohokuPage extends StatefulWidget {
 class _TohokuPageState extends State<TohokuPage> {
   @override
   Widget build(BuildContext context) {
-    String? _imgURL;
+    String result = '';
+    String _imgURL;
     List<String> imgURLs = [
       //ここに表示したい画像URLを追加
       'images/1_hokkaidou.png',
-      'images/2_touhoku1__aomori.png',
-      'images/2_touhoku2__iwate.png',
-      'images/2_touhoku3__miyagi.png',
-      'images/2_touhoku4__akita.png',
-      'images/2_touhoku5__yamagata.png',
+      // 'images/2_touhoku1__aomori.png',
+      // 'images/2_touhoku2__iwate.png',
+      // 'images/2_touhoku3__miyagi.png',
+      // 'images/2_touhoku4__akita.png',
+      // 'images/2_touhoku5__yamagata.png',
       // 'images/3_kantou1__ibaraki.png',
       // 'images/3_kantou2__tochigi.png',
       // 'images/3_kantou3__gunma.png',
@@ -56,6 +57,35 @@ class _TohokuPageState extends State<TohokuPage> {
       // 'images/7_shikoku3_tokushima.png',
       // 'images/7_shikoku4_kouchi.png',
     ];
+
+    // String randomNumberToHand(int randomNumber) {
+    //   switch (randomNumber) {
+    //     case 0:
+    //       return 'images/1_hokkaidou.png';
+    //     case 1:
+    //       return 'images/2_touhoku1__aomori.png';
+    //     case 2:
+    //       return '✋';
+    //     default:
+    //       return '✊';
+    //   }
+    // }
+
+    void judge() {
+      // 北海道ボタンを選択し画面の北海道と合っていたら
+      if (NameOfPrefectures.hokkaido == imgURLs) {
+        result = '正解';
+      } else if (NameOfPrefectures.hokkaido != imgURLs) {
+        result = '不正解';
+      }
+    }
+
+    void selectedTodofu(String selectedTodofu) {
+      NameOfPrefectures.hokkaido = selectedTodofu;
+      judge();
+      setState(() {});
+    }
+
     final ram = Random(
         DateTime.now().millisecondsSinceEpoch); //乱数の種を時間ごとに変更するためのDataTime
     _imgURL = imgURLs[ram.nextInt(imgURLs.length)];
@@ -65,9 +95,58 @@ class _TohokuPageState extends State<TohokuPage> {
             AppBar(title: Text('第一問、この地形は何県？'), backgroundColor: Colors.black),
         body: Column(children: [
           Image.asset(_imgURL),
+          Center(
+              child: Text(
+            result,
+            style: TextStyle(fontWeight: FontWeight.bold, fontSize: 50),
+          )),
           Expanded(
-            child: ListView(children: const [
-              TohokuWidget(),
+            child: ListView(children: [
+              Row(
+                children: [
+                  SizedBox(width: 20),
+                  Center(
+                    child: TextButton(
+                      style: TextButton.styleFrom(
+                        side: BorderSide(
+                          color: Colors.black, //色
+                          width: 2, //太さ
+                        ),
+                      ),
+                      child: Text(
+                        NameOfPrefectures.hokkaido,
+                        style: TextStyle(
+                          color: Colors.black,
+                          fontSize: 40,
+                          fontWeight: FontWeight.bold,
+                        ),
+                      ),
+                      onPressed: () =>
+                          selectedTodofu(NameOfPrefectures.hokkaido),
+                    ),
+                  ),
+                  SizedBox(width: 30),
+                  Center(
+                    child: TextButton(
+                      style: TextButton.styleFrom(
+                        side: BorderSide(
+                          color: Colors.black, //色
+                          width: 2, //太さ
+                        ),
+                      ),
+                      child: Text(
+                        NameOfPrefectures.aomori,
+                        style: TextStyle(
+                          color: Colors.black,
+                          fontSize: 40,
+                          fontWeight: FontWeight.bold,
+                        ),
+                      ),
+                      onPressed: () => print('クリックされました'),
+                    ),
+                  ),
+                ],
+              ),
               SizedBox(height: 30),
               TohokuWidget1(),
               SizedBox(height: 30),
