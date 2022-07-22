@@ -125,6 +125,7 @@ class _TohokuPageState extends State<TohokuPage> {
                           selectedTodofu(NameOfPrefectures.hokkaido),
                     ),
                   ),
+                  SizedBox(width: 30),
                   Center(
                     child: TextButton(
                       style: TextButton.styleFrom(
