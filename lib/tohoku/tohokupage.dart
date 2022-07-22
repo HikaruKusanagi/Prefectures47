@@ -104,6 +104,7 @@ class _TohokuPageState extends State<TohokuPage> {
             child: ListView(children: [
               Row(
                 children: [
+                  SizedBox(width: 20),
                   Center(
                     child: TextButton(
                       style: TextButton.styleFrom(
