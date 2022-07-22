@@ -126,6 +126,7 @@ class _TohokuPageState extends State<TohokuPage> {
                     ),
                   ),
                   SizedBox(width: 30),
+                  SizedBox(width: 30),
                   Center(
                     child: TextButton(
                       style: TextButton.styleFrom(
