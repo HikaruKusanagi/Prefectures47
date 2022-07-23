@@ -11,11 +11,21 @@ class MyHomePage extends StatefulWidget {
 
 class _MyHomePageState extends State<MyHomePage> {
   String computerHand = '北海道';
-  String myHand = '北海道';
+  String _imgURL = '北海道';
+  String syokiyi = '';
   String result = '正解';
 
+  List<String> imgURLs = [
+    'images/1_hokkaidou.png',
+    'images/2_touhoku1__aomori.png',
+    'images/2_touhoku2__iwate.png',
+    'images/2_touhoku3__miyagi.png',
+    'images/2_touhoku4__akita.png',
+    'images/2_touhoku5__yamagata.png'
+  ];
+
   void selectHand(String selectedHand) {
-    myHand = selectedHand;
+    _imgURL = selectedHand;
     generateComputerHand();
     judge();
     setState(() {});
@@ -26,10 +36,10 @@ class _MyHomePageState extends State<MyHomePage> {
     computerHand = randomNumberToHand(randomNumber);
   }
 
-  String randomNumberToHand(int randomNumber) {
+  randomNumberToHand(int randomNumber) {
     switch (randomNumber) {
       case 0:
-        return '北海道';
+        return _imgURL = 'images/1_hokkaidou.png';
       case 1:
         return '✌️';
       case 2:
@@ -49,19 +59,24 @@ class _MyHomePageState extends State<MyHomePage> {
     // } else if (myHand == '✋️' && computerHand == '✊') {
     //   result = '勝ち';
     // }
-    if (computerHand == myHand) {
+    if (computerHand == _imgURL) {
       result = '正解';
-    } else if (myHand == '北海道' && computerHand == '✌️' ||
-        myHand == '✌️' && computerHand == '✋️' ||
-        myHand == '✋️' && computerHand == '北海道') {
-      result = '勝ち';
+    } else if (_imgURL == '北海道' && computerHand == '✌️' ||
+        _imgURL == '✌️' && computerHand == '✋️' ||
+        _imgURL == '✋️' && computerHand == '北海道') {
+      result = '';
     } else {
-      result = '負け';
+      result = '';
     }
   }
 
   @override
   Widget build(BuildContext context) {
+    String _imgURL;
+    final ram = Random(
+        DateTime.now().millisecondsSinceEpoch); //乱数の種を時間ごとに変更するためのDataTime
+    _imgURL = imgURLs[ram.nextInt(imgURLs.length)];
+
     return Scaffold(
       appBar: AppBar(
         title: Text('じゃんけん'),
@@ -75,15 +90,11 @@ class _MyHomePageState extends State<MyHomePage> {
               style: TextStyle(fontSize: 32),
             ),
             SizedBox(height: 32),
-            Text(
-              computerHand,
-              style: TextStyle(fontSize: 32),
-            ),
-            SizedBox(height: 40),
-            Text(
-              myHand,
-              style: TextStyle(fontSize: 32),
-            ),
+            // Text(
+            //   computerHand,
+            //   style: TextStyle(fontSize: 32),
+            // ),
+            Image.asset(_imgURL),
             SizedBox(height: 32),
             Row(
               mainAxisAlignment: MainAxisAlignment.spaceEvenly,
