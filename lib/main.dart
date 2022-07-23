@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:prefectures47/home.dart';
 
 import 'package:prefectures47/mapselection.dart';
 
@@ -16,7 +17,7 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: Colors.blue,
       ),
-      home: const MapSelection(),
+      home: const MyHomePage(),
     );
   }
 }
