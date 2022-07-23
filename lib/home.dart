@@ -100,7 +100,9 @@ class _MyHomePageState extends State<MyHomePage> {
               mainAxisAlignment: MainAxisAlignment.spaceEvenly,
               children: [
                 ElevatedButton(
-                  onPressed: () {},
+                  onPressed: () {
+                    selectHand('北海道');
+                  },
                   child: Text('北海道'),
                 ),
                 ElevatedButton(
