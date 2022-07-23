@@ -14,65 +14,28 @@ class _MyHomePageState extends State<MyHomePage> {
   String myHand = '北海道';
   String result = '正解';
 
-  List<String> imgURLs = [
-    //ここに表示したい画像URLを追加
-    'images/1_hokkaidou.png',
-    // 'images/2_touhoku1__aomori.png',
-    // 'images/2_touhoku2__iwate.png',
-    // 'images/2_touhoku3__miyagi.png',
-    // 'images/2_touhoku4__akita.png',
-    // 'images/2_touhoku5__yamagata.png',
-    // 'images/3_kantou1__ibaraki.png',
-    // 'images/3_kantou2__tochigi.png',
-    // 'images/3_kantou3__gunma.png',
-    // 'images/3_kantou4__saitama.png',
-    // 'images/3_kantou5__chiba.png',
-    // 'images/3_kantou6__tokyo.png',
-    // 'images/3_kantou7__kanagawa.png',
-    // 'images/4_chuubu1_yamanashi.png',
-    // 'images/4_chuubu2_nagano.png',
-    // 'images/4_chuubu3_niigata.png',
-    // 'images/4_chuubu4_toyama.png',
-    // 'images/4_chuubu5_ishikawa.png',
-    // 'images/4_chuubu6_fukui.png',
-    // 'images/4_chuubu7_shizuoka.png',
-    // 'images/4_chuubu8_aichi.png',
-    // 'images/4_chuubu9_gifu.png',
-    // 'images/5_kinki1_mie.png',
-    // 'images/5_kinki2_shiga.png',
-    // 'images/5_kinki3_kyouto.png',
-    // 'images/5_kinki4_osaka.png',
-    // 'images/5_kinki5_hyougo.png',
-    // 'images/5_kinki6_nara.png',
-    // 'images/6_chuugoku1_tottori.png',
-    // 'images/6_chuugoku2_shimane.png',
-    // 'images/6_chuugoku3_okayama.png',
-    // 'images/6_chuugoku4_hiroshima.png',
-    // 'images/6_chuugoku5_yamaguchi.png',
-    // 'images/7_shikoku1_kagawa.png',
-    // 'images/7_shikoku2_ehime.png',
-    // 'images/7_shikoku3_tokushima.png',
-    // 'images/7_shikoku4_kouchi.png',
-  ];
-
   void selectHand(String selectedHand) {
     myHand = selectedHand;
-
+    generateComputerHand();
     judge();
     setState(() {});
   }
 
-  void randomNumberToHand() {
-    switch () {
+  void generateComputerHand() {
+    final randomNumber = Random().nextInt(3);
+    computerHand = randomNumberToHand(randomNumber);
+  }
+
+  String randomNumberToHand(int randomNumber) {
+    switch (randomNumber) {
       case 0:
-        this.imgURLs;
-        return;
+        return '北海道';
       case 1:
-        return;
+        return '✌️';
       case 2:
-        return;
+        return '✋';
       default:
-        return;
+        return '北海道';
     }
   }
 
