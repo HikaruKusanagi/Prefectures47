@@ -48,7 +48,6 @@ class _MyHomePageState extends State<MyHomePage> {
   String result = '';
 
   void _incrementCounter() {
-    setState(() {});
     result = '正解';
   }
 
