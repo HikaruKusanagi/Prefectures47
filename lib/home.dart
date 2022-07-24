@@ -10,10 +10,7 @@ class MyHomePage extends StatefulWidget {
 }
 
 class _MyHomePageState extends State<MyHomePage> {
-  String computerHand = '北海道';
-  String _imgURL = '北海道';
-  String syokiyi = '';
-  String result = '正解';
+  String result = '';
 
   List<String> imgURLs = [
     'images/1_hokkaidou.png',
@@ -24,49 +21,47 @@ class _MyHomePageState extends State<MyHomePage> {
     'images/2_touhoku5__yamagata.png'
   ];
 
-  void selectHand(String selectedHand) {
-    _imgURL = selectedHand;
-    generateComputerHand();
-    judge();
+  // void selectHand(String selectedHand) {
+  //   imgURLs = selectedHand as List<String>;
+  //   // generateComputerHand();
+  //   judge(selectHand);
+  //   setState(() {});
+  // }
+
+  // void generateComputerHand() {
+  //   final randomNumber = Random().nextInt(3);
+  //   selectHand;
+  //   randomNumberToHand(randomNumber);
+  // }
+
+  // randomNumberToHand(int randomNumber) {
+  //   switch (randomNumber) {
+  //     case 0:
+  //       return imgURLs;
+  //     case 1:
+  //       return '✌️';
+  //     case 2:
+  //       return '✋';
+  //     default:
+  //       return imgURLs;
+  //   }
+  // }
+
+  int _counter = 0;
+
+  void _incrementCounter() {
     setState(() {});
   }
 
-  void generateComputerHand() {
-    final randomNumber = Random().nextInt(3);
-    computerHand = randomNumberToHand(randomNumber);
-  }
-
-  randomNumberToHand(int randomNumber) {
-    switch (randomNumber) {
-      case 0:
-        return _imgURL = 'images/1_hokkaidou.png';
-      case 1:
-        return '✌️';
-      case 2:
-        return '✋';
-      default:
-        return '北海道';
-    }
-  }
-
-  void judge() {
-    // if (computerHand == myHand) {
-    //   result = '引き分け';
-    // } else if (myHand == '✊' && computerHand == '✌️') {
-    //   result = '勝ち';
-    // } else if (myHand == '✌️' && computerHand == '✋️') {
-    //   result = '勝ち';
-    // } else if (myHand == '✋️' && computerHand == '✊') {
-    //   result = '勝ち';
-    // }
-    if (computerHand == _imgURL) {
+  void judge(selectHand) {
+    if (selectHand == imgURLs) {
       result = '正解';
-    } else if (_imgURL == '北海道' && computerHand == '✌️' ||
-        _imgURL == '✌️' && computerHand == '✋️' ||
-        _imgURL == '✋️' && computerHand == '北海道') {
-      result = '';
-    } else {
-      result = '';
+      // } else if (_imgURL == '北海道' && selectHand == '✌️' ||
+      //     _imgURL == '✌️' && selectHand == '✋️' ||
+      //     _imgURL == '✋️' && selectHand == '北海道') {
+      //   result = '';
+      // } else {
+      //   result = '';
     }
   }
 
@@ -90,10 +85,6 @@ class _MyHomePageState extends State<MyHomePage> {
               style: TextStyle(fontSize: 32),
             ),
             SizedBox(height: 32),
-            // Text(
-            //   computerHand,
-            //   style: TextStyle(fontSize: 32),
-            // ),
             Image.asset(_imgURL),
             SizedBox(height: 32),
             Row(
@@ -101,21 +92,9 @@ class _MyHomePageState extends State<MyHomePage> {
               children: [
                 ElevatedButton(
                   onPressed: () {
-                    selectHand('北海道');
+                    judge;
                   },
                   child: Text('北海道'),
-                ),
-                ElevatedButton(
-                  onPressed: () {
-                    selectHand('✌️');
-                  },
-                  child: Text('✌️'),
-                ),
-                ElevatedButton(
-                  onPressed: () {
-                    selectHand('✋');
-                  },
-                  child: Text('✋'),
                 ),
               ],
             ),
