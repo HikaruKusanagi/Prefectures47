@@ -10,8 +10,6 @@ class MyHomePage extends StatefulWidget {
 }
 
 class _MyHomePageState extends State<MyHomePage> {
-  String result = '';
-
   List<String> imgURLs = [
     'images/1_hokkaidou.png',
     'images/2_touhoku1__aomori.png',
@@ -47,10 +45,11 @@ class _MyHomePageState extends State<MyHomePage> {
   //   }
   // }
 
-  int _counter = 0;
+  String result = '';
 
   void _incrementCounter() {
     setState(() {});
+    result = '正解';
   }
 
   void judge(selectHand) {
@@ -81,7 +80,7 @@ class _MyHomePageState extends State<MyHomePage> {
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
             Text(
-              result,
+              '$result',
               style: TextStyle(fontSize: 32),
             ),
             SizedBox(height: 32),
@@ -91,9 +90,7 @@ class _MyHomePageState extends State<MyHomePage> {
               mainAxisAlignment: MainAxisAlignment.spaceEvenly,
               children: [
                 ElevatedButton(
-                  onPressed: () {
-                    judge;
-                  },
+                  onPressed: _incrementCounter,
                   child: Text('北海道'),
                 ),
               ],
