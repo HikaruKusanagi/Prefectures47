@@ -47,14 +47,13 @@ class _MyHomePageState extends State<MyHomePage> {
 
   String result = '';
 
-  // void selectHand() {
+  // void _incrementCounter() {
   //   result = '正解';
-  //   setState(() {});
   // }
 
   judge(selectHand) {
     if (selectHand == imgURLs) {
-      result = '正解';
+      result = 'ss';
       // } else if (_imgURL == '北海道' && selectHand == '✌️' ||
       //     _imgURL == '✌️' && selectHand == '✋️' ||
       //     _imgURL == '✋️' && selectHand == '北海道') {
@@ -66,7 +65,6 @@ class _MyHomePageState extends State<MyHomePage> {
 
   @override
   Widget build(BuildContext context) {
-    String _imgURL;
     final ram = Random(
         DateTime.now().millisecondsSinceEpoch); //乱数の種を時間ごとに変更するためのDataTime
     _imgURL = imgURLs[ram.nextInt(imgURLs.length)];
@@ -90,7 +88,7 @@ class _MyHomePageState extends State<MyHomePage> {
               mainAxisAlignment: MainAxisAlignment.spaceEvenly,
               children: [
                 ElevatedButton(
-                  onPressed: judge(imgURLs),
+                  onPressed: judge(_imgURL),
                   child: Text('北海道'),
                 ),
               ],
