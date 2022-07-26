@@ -47,13 +47,13 @@ class _MyHomePageState extends State<MyHomePage> {
 
   String result = '';
 
-  // void _incrementCounter() {
-  //   result = '正解';
-  // }
+  void _incrementCounter() {
+    judge;
+  }
 
-  judge(selectHand) {
+  void judge(selectHand) {
     if (selectHand == imgURLs) {
-      result = 'ss';
+      result = '正解';
       // } else if (_imgURL == '北海道' && selectHand == '✌️' ||
       //     _imgURL == '✌️' && selectHand == '✋️' ||
       //     _imgURL == '✋️' && selectHand == '北海道') {
@@ -89,7 +89,7 @@ class _MyHomePageState extends State<MyHomePage> {
               mainAxisAlignment: MainAxisAlignment.spaceEvenly,
               children: [
                 ElevatedButton(
-                  onPressed: judge(_imgURL),
+                  onPressed: _incrementCounter,
                   child: Text('北海道'),
                 ),
               ],
