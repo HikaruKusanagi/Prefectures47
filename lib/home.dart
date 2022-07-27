@@ -45,6 +45,8 @@ class _MyHomePageState extends State<MyHomePage> {
   //   }
   // }
 
+  String result = '';
+
   void _incrementCounter() {
     judge;
   }
